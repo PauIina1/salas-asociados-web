@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Salas y Asociados">
+  <rect width="64" height="64" rx="12" fill="#0f172a" />
+  <path d="M32 12 12 21v4h40v-4L32 12Zm-14 17h6v17h-6V29Zm11 0h6v17h-6V29Zm11 0h6v17h-6V29ZM12 50h40v4H12v-4Z" fill="#fbbf24" />
+</svg>

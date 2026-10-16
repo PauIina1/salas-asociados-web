@@ -1,0 +1,15 @@
+---
+import site from '../../data/site.json';
+---
+
+<header class="border-b border-slate-200 bg-white" aria-label="Cabecera principal">
+  <div class="mx-auto flex max-w-6xl items-center px-6 py-5 sm:px-8 lg:px-12">
+    <a
+      href="/"
+      class="text-lg font-bold tracking-tight text-slate-950 transition hover:text-amber-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-600"
+      aria-label={`${site.shortName}, página de inicio`}
+    >
+      {site.shortName}
+    </a>
+  </div>
+</header>

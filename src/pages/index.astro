@@ -1,0 +1,48 @@
+---
+import SiteFooter from '../components/layout/SiteFooter.astro';
+import SiteHeader from '../components/layout/SiteHeader.astro';
+import site from '../data/site.json';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title={site.name} description={site.description}>
+  <SiteHeader />
+
+  <main id="main-content" class="flex flex-1 items-center">
+    <section
+      class="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 sm:py-28 lg:px-12"
+      aria-labelledby="page-title"
+    >
+      <div class="max-w-3xl">
+        <p
+          class="mb-5 inline-flex rounded-full border border-amber-300 bg-amber-50 px-4 py-1.5 text-sm font-semibold text-amber-900"
+        >
+          Sitio institucional en preparación
+        </p>
+
+        <h1
+          id="page-title"
+          class="text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl"
+        >
+          {site.name}
+        </h1>
+
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
+          Estamos preparando nuestro espacio institucional para presentar información
+          sobre el estudio y sus servicios jurídicos.
+        </p>
+
+        <p class="mt-8 text-base font-medium text-slate-800">
+          <span class="sr-only">Ubicación:</span>
+          {site.location}
+        </p>
+
+        <p class="mt-12 border-l-4 border-amber-500 pl-4 text-sm leading-6 text-slate-500">
+          {site.contentStatus}
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <SiteFooter />
+</BaseLayout>
